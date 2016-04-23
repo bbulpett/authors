@@ -5,9 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-author = Author.create(name: Faker::Name.name)
 5.times do
-		Article.create(title: Faker::Book.title,
-										body: Faker::Lorem.paragraphs.join("\n\n"),
-										author: author)
+	Author.create(name: Faker::Name.name)
+	@authors = Author.all.to_a
+end
+
+10.times do
+	Article.create(	title: Faker::Book.title,
+									body: Faker::Lorem.paragraphs.join("\n\n"),
+									author: @authors.sample)
 end
