@@ -1,8 +1,10 @@
 <p>
+	<label>Title</label><br>
 	{{input value=model.title}}
 </p>
 <p>
-	{{textarea value=model.body}}
+	<label>Body</label><br>
+	{{textarea rows=8 cols=72 value=model.body}}
 </p>
 
 <button {{action "savePost"}}>Save</button>

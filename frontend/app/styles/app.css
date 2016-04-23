@@ -4,9 +4,45 @@
 body {
 	padding: 20px;
 	font-family: 'Source Sans Pro', sans-serif;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.025);
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	-o-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
 
 h1, h2, h3 {
 	font-family: 'Playfair Display', serif;
-	font-size: 275%;
+}
+
+h2 {
+	font-size: 32pt;
+}
+
+h3 {
+	font-size: 22pt;
+}
+
+a {
+	color: #000;
+}
+
+table {
+	box-shadow: 3px 6px 6px rgba(0,0,0,0.25);
+}
+
+thead {
+	background-color: #333;
+}
+
+th, #action-column {
+	text-align: center;
+}
+
+button:hover, #action-column:hover {
+	background: #333;
+}
+
+thead, button:hover, button:hover > a, #action-column:hover > a {
+	color: #FFF;
 }
