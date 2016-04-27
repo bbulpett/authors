@@ -11,7 +11,7 @@ Router.map(function() {
   this.route('article', function() {
     this.route('edit', { path: ':id/edit' });
     this.route('show', { path: ':id' });
-    this.route('author-articles-listing', { path: ':author_id' });
+    this.route('author-articles-listing', { path: '/author-articles-listing/:author_id' });
   });
 });
 
