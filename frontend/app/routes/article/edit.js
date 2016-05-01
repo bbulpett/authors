@@ -11,6 +11,10 @@ export default Ember.Route.extend({
         console.info('Article saved!');
         this.transitionTo('articles');
       });
+    },
+
+    print_article() {
+      console.log('printing article...');
     }
   }
 });

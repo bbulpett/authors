@@ -8,4 +8,9 @@ class ArticlesController < JSONAPI::ResourceController
 
 		render json: serializer.serialize_to_hash(resource)
 	end
+
+	def print_article
+		render text: params[:body]
+		# puts "********* PRINTING ARTICLE ***********"	
+	end
 end
